@@ -1,7 +1,9 @@
 <!-- this views file manages presentation/view
 # erb is a templating system that can combine html code and Ruby code -->
 
-  <h1>My name is <%= @name %></h1> 
+  <% if @name && @last_name && @adorable%>
+  <h1>My name is <%= @name %> <%= @last_name %>. I am a cat and I am <%= @adorable %> </h1>
+  <% end %>
   <div>
   <img style = 'border:2px; border-style:dashed; border-color:red' src = 'http://bit.ly/1eze8aE'>
   </div>
